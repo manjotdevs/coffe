@@ -9,17 +9,23 @@
 .navbar {
   background: #2b1b12;
   color: white;
-  padding: 15px 40px;
+  padding: 15px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+}
+
+.navbar nav {
+  margin-top: 10px;
 }
 
 .navbar nav a {
   color: white;
-  margin-left: 20px;
+  margin-left: 15px;
   text-decoration: none;
   font-weight: 600;
+  font-size: 14px;
 }
 
 .navbar nav a:hover {
@@ -28,33 +34,38 @@
 
 /* HERO */
 .hero {
-  height: 50vh;
+  height: 60vh;
   background: url("img/background.jpg") center/cover no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  padding-left: 60px;
+  align-items: flex-start;   /* FIX: prevent button from stretching */
+  padding: 0 20px;
   color: white;
+  text-align: left;
 }
 
 .hero h2 {
-  font-size: 48px;
+  font-size: 32px;
 }
 
 .hero p {
-  font-size: 20px;
+  font-size: 16px;
   margin: 10px 0 20px;
 }
 
 .hero button {
-  padding: 12px 30px;
+  display: inline-block;     /* FIX */
+  width: auto;               /* FIX */
+  padding: 10px 22px;
   background: #c49b63;
   border: none;
   color: white;
   font-weight: bold;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 16px;
+  border-radius: 5px;
+  align-self: flex-start;    /* FIX ensures no stretching */
 }
 
 .hero button:hover {
@@ -64,25 +75,24 @@
 /* PRODUCTS */
 .products {
   text-align: center;
-  padding: 60px 20px;
+  padding: 40px 15px;
 }
 
 .products h2 {
-  margin-bottom: 40px;
-  font-size: 32px;
+  margin-bottom: 30px;
+  font-size: 28px;
 }
 
 .card-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 20px;
-  width: 90%;
-  margin: auto;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  width: 100%;
 }
 
 .card {
   background: #f5f0e8;
-  padding: 20px;
+  padding: 15px;
   border-radius: 10px;
   transition: 0.3s;
 }
@@ -93,21 +103,25 @@
 }
 
 .card h3 {
-  margin: 15px 0 8px;
+  margin: 10px 0 5px;
+  font-size: 18px;
 }
 
 .card p {
   color: #4a3d32;
-  margin-bottom: 15px;
+  font-size: 14px;
+  margin-bottom: 10px;
 }
 
 .card button {
   background: #2b1b12;
   color: white;
-  padding: 10px 25px;
+  padding: 8px 18px;
   border: none;
   cursor: pointer;
   font-weight: bold;
+  font-size: 14px;
+  border-radius: 5px;
 }
 
 .card:hover {
@@ -116,30 +130,30 @@
 
 /* ABOUT */
 .about {
-  padding: 60px 20px;
+  padding: 40px 20px;
   background: #2c1810;
   color: #fff;
 }
 
 .about-box {
-  max-width: 900px;
+  max-width: 800px;
   margin: auto;
   text-align: center;
 }
 
 .about-box h2 {
-  font-size: 36px;
-  margin-bottom: 20px;
+  font-size: 30px;
+  margin-bottom: 15px;
 }
 
 .about-box p {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.6;
 }
 
 /* CONTACT */
 .contact {
-  padding: 60px 20px;
+  padding: 40px 20px;
   text-align: center;
 }
 
@@ -147,6 +161,45 @@ footer {
   background: #2b1b12;
   color: white;
   text-align: center;
-  padding: 20px;
-  margin-top: 30px;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+/* MOBILE FIXES */
+@media (max-width: 600px) {
+  .navbar {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .navbar nav a {
+    margin: 0 10px;
+  }
+
+  .hero {
+    height: auto;
+    padding: 40px 20px;
+    text-align: center;
+    align-items: center;     /* center on mobile */
+  }
+
+  .hero button {
+    align-self: center;      /* center button on mobile */
+  }
+
+  .hero h2 {
+    font-size: 26px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+
+  .products h2 {
+    font-size: 24px;
+  }
 }
