@@ -1,152 +1,152 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* NAVBAR */
 .navbar {
-    background: #2b1b12;
-    color: white;
-    padding: 15px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  background: #2b1b12;
+  color: white;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navbar nav a {
-    color: white;
-    margin-left: 20px;
-    text-decoration: none;
-    font-weight: 600;
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 600;
 }
 
 .navbar nav a:hover {
-    color: #c49b63;
+  color: #c49b63;
 }
 
 /* HERO */
 .hero {
-    height: 100vh;
-    background: url("img/background.jpg") center/cover no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding-left: 60px;
-    color: white;
+  height: 70vh;
+  background: url("img/background.jpg") center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 60px;
+  color: white;
 }
 
 .hero h2 {
-    font-size: 48px;
+  font-size: 48px;
 }
 
 .hero p {
-    font-size: 20px;
-    margin: 10px 0 20px;
+  font-size: 20px;
+  margin: 10px 0 20px;
 }
 
 .hero button {
-    padding: 12px 30px;
-    background: #c49b63;
-    border: none;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    font-size: 18px;
+  padding: 12px 30px;
+  background: #c49b63;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 18px;
 }
 
 .hero button:hover {
-    background: #a87f4d;
+  background: #a87f4d;
 }
 
 /* PRODUCTS */
 .products {
-    text-align: center;
-    padding: 60px 20px;
+  text-align: center;
+  padding: 60px 20px;
 }
 
 .products h2 {
-    margin-bottom: 40px;
-    font-size: 32px;
+  margin-bottom: 40px;
+  font-size: 32px;
 }
 
 .card-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 20px;
-    width: 90%;
-    margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  width: 90%;
+  margin: auto;
 }
 
 .card {
-    background: #f5f0e8;
-    padding: 20px;
-    border-radius: 10px;
-    transition: 0.3s;
+  background: #f5f0e8;
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
 }
 
 .card img {
-    width: 100%;
-    border-radius: 10px;
+  width: 100%;
+  border-radius: 10px;
 }
 
 .card h3 {
-    margin: 15px 0 8px;
+  margin: 15px 0 8px;
 }
 
 .card p {
-    color: #4a3d32;
-    margin-bottom: 15px;
+  color: #4a3d32;
+  margin-bottom: 15px;
 }
 
 .card button {
-    background: #2b1b12;
-    color: white;
-    padding: 10px 25px;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
+  background: #2b1b12;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
 }
 
 .card:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 /* ABOUT */
 .about {
-    padding: 60px 20px;
-    background: #2C1810;
-    color: #fff;
+  padding: 60px 20px;
+  background: #2c1810;
+  color: #fff;
 }
 
 .about-box {
-    max-width: 900px;
-    margin: auto;
-    text-align: center;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
 }
 
 .about-box h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
+  font-size: 36px;
+  margin-bottom: 20px;
 }
 
 .about-box p {
-    font-size: 18px;
-    line-height: 1.6;
+  font-size: 18px;
+  line-height: 1.6;
 }
 
 /* CONTACT */
 .contact {
-    padding: 60px 20px;
-    text-align: center;
+  padding: 60px 20px;
+  text-align: center;
 }
 
 footer {
-    background: #2b1b12;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 30px;
+  background: #2b1b12;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
 }
